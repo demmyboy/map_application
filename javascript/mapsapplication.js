@@ -1,4 +1,4 @@
-var locationDetails = function(){
+var googleSuccess = function(){
 	// The following array is used to store information for each point in a marker...
 	var areaDetails = [{
 		areaName:"Rådhusstræde 5",
