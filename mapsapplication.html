@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" charset="UTF-8" content="initial-scale=1.0, user-scalable=no" />
+    <title>Udacity Project 5: Map Application </title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Entertainment Arena</h3>
+                <form>
+                    <input type="text" id="address" placeholder="Enter Location" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+                    <ul data-bind="foreach:visible">
+                        <li data-bind="text:areaDescription, click: openInfoWindow"></li>
+                    </ul>
+                </form>            
+            </div>
+            <div class="col-md-9">
+                <div id="displayMap"></div>
+                </div> 
+            </div>
+        </div> <!--End of row -->
+    </div><!--End of container -->
+    
+
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/knockout.js"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="javascript/mapsapplication.js" ></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXeGehzCayzqOJWG56XYrst22ZQ-hUzJA&callback=locationDetails" onerror="googleError()"></script>
+
+    
+
+    
+</body>
+</html>
